@@ -101,6 +101,21 @@ The network enforces **role-based access control** using extended ACLs to protec
 ---
 
 ##  Validation & Testing
+### Evidence
+
+Screenshots validating the implementation are provided below:
+
+- 📐 **Network Topology**  
+  [View topology diagram](screenshots/Topology.png)
+
+- 🌐 **DHCP Success (Users VLAN)**  
+  [View DHCP assignment](screenshots/DHCP%20success.png)
+
+- 🔐 **IT Access to Core Banking Servers**  
+  [View allowed ping](screenshots/IT%20ping%20allowed.png)
+
+- 🚫 **Blocked Access (Guest/User VLANs)**  
+  [View blocked ping](screenshots/Blocked%20pings.png)
 
 The network configuration was validated through functional and security testing to ensure correct behavior.
 
