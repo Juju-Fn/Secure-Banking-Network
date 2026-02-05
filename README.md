@@ -80,3 +80,21 @@ This simplifies routing, troubleshooting, and access control enforcement.
   - Guest devices
 - Reduces manual configuration errors and simplifies network management
 
+---
+
+## 🔐 Security Controls
+
+### Access Control Policy
+The network enforces **role-based access control** using extended ACLs to protect sensitive banking systems.
+
+| Source VLAN | Destination | Access |
+|-----------|------------|--------|
+| GUEST (40) | SERVERS (20) | ❌ Denied |
+| USERS (10) | SERVERS (20) | ❌ Denied |
+| IT (30) | SERVERS (20) | ✅ Allowed |
+
+### Implementation Details
+- Extended ACLs applied on the router
+- Traffic filtered between VLANs at Layer 3
+- Least-privilege principle enforced
+- Reduces lateral movement and attack surface
