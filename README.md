@@ -98,3 +98,21 @@ The network enforces **role-based access control** using extended ACLs to protec
 - Traffic filtered between VLANs at Layer 3
 - Least-privilege principle enforced
 - Reduces lateral movement and attack surface
+---
+
+##  Validation & Testing
+
+The network configuration was validated through functional and security testing to ensure correct behavior.
+
+### Functional Tests
+- DHCP successfully assigns IP addresses to all VLANs
+- Inter-VLAN routing operates as expected
+- Default gateways reachable from respective VLANs
+
+### Security Tests
+- Users (VLAN 10) cannot access server network (VLAN 20)
+- Guests (VLAN 40) are fully isolated from internal systems
+- IT administrators (VLAN 30) have authorized access to server resources
+
+### Results
+All tests behaved as expected, confirming correct network segmentation, routing, and security enforcement.
