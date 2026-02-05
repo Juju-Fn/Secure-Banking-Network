@@ -47,3 +47,18 @@ This limits lateral movement and enforces least-privilege access.
 | 30 | IT | IT administration and management |
 | 40 | GUEST | Guest and visitor devices |
 
+---
+
+## 🌐 IP Addressing Scheme
+
+Each VLAN is assigned a dedicated IP subnet with a centralized default gateway on the router.  
+This simplifies routing, troubleshooting, and access control enforcement.
+
+| VLAN | Network | Default Gateway |
+|----|--------|----------------|
+| USERS (10) | 192.168.10.0/24 | 192.168.10.1 |
+| SERVERS (20) | 192.168.20.0/24 | 192.168.20.1 |
+| IT (30) | 192.168.30.0/24 | 192.168.30.1 |
+| GUEST (40) | 192.168.40.0/24 | 192.168.40.1 |
+
+
