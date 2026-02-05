@@ -61,4 +61,22 @@ This simplifies routing, troubleshooting, and access control enforcement.
 | IT (30) | 192.168.30.0/24 | 192.168.30.1 |
 | GUEST (40) | 192.168.40.0/24 | 192.168.40.1 |
 
+---
+
+##  Routing & DHCP
+
+### Inter-VLAN Routing
+- Implemented using **router-on-a-stick**
+- A single physical router interface is divided into multiple subinterfaces
+- Each subinterface acts as the default gateway for its respective VLAN
+- Enables controlled communication between VLANs
+
+### DHCP Configuration
+- Centralized DHCP service hosted on the router
+- Separate DHCP pools per VLAN
+- Automatic IP address assignment for:
+  - Users
+  - IT administrators
+  - Guest devices
+- Reduces manual configuration errors and simplifies network management
 
